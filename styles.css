@@ -1,0 +1,164 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d1d1d1;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    background-color: #d1d1d1;
+    padding: 20px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 75px;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/* Left Side: Gallery */
+.gallery {
+    width: 60%;
+}
+
+.gallery h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.gallery-grid p {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/* Right Side: Chatbot */
+.chatbot {
+    width: 35%;
+}
+
+.chatbot h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.chat-interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chat-interface textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+.chat-interface .submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9e9e9e;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9e9e9e;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.generated-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.generated-image img {
+    width: 100%;
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+}
+
+.recipe-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 40px;
+}
+
+/* Recipe Image Section */
+.recipe-image {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.recipe-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+/* Recipe Details Section */
+.recipe-details {
+    width: 55%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recipe-details h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.recipe-details p {
+    font-size: 25px;
+    line-height: 1.8;
+}
