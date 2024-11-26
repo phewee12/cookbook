@@ -48,17 +48,26 @@
 
             <!-- Right Side: Chatbot -->
             <div class="chatbot">
-                <h2 style="font-family: 'Abril Fatface', serif;">Make Your Own</h2>
-                <div class="chat-interface">
-                    <textarea placeholder="Enter your recipe idea here..."></textarea>
-                    <button style="font-family: 'Abril Fatface', serif;" class="submit-btn">Enter</button>
+                <div class = "key-handling" id="validation">
+                    <h2 style="font-family: 'Abril Fatface', serif;">Give an Open AI api key:</h2>
+                    <textarea id='key-input' placeholder="Enter your API key here"></textarea>
+                    <button style="font-family: 'Abril Fatface', serif;" class="submit-btn" id="api-btn" onclick="validate()">Enter</button>
                 </div>
-                <button style="font-family: 'Abril Fatface', serif;" class="generate-btn">Generate Image</button>
-                <div class="generated-image">
-                    <img src="placeholder.jpg" alt="Generated Image" id="outputImage">
+                <div class="active-bot" id="input-container">
+                    <h2 style="font-family: 'Abril Fatface', serif;">Make Your Own</h2>
+                    <div class="chat-interface">
+                        <div id="chat-container"></div>
+                        <textarea id="user-input" placeholder="Enter your recipe idea here..."></textarea>
+                        <button style="font-family: 'Abril Fatface', serif;" class="submit-btn" onclick="sendMessage()">Enter</button>
+                    </div>
+                    <!-- <button style="font-family: 'Abril Fatface', serif;" class="generate-btn">Generate Image</button> -->
+                    <!-- <div class="generated-image">
+                        <img src="placeholder.jpg" alt="Generated Image" id="outputImage">
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
+    <script src="chatbot.js"></script>
 </body>
 </html>
